@@ -66,6 +66,18 @@ public interface MolangListener extends ParseTreeListener {
 	 */
 	void exitComparisonOperator(MolangParser.ComparisonOperatorContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code assignmentOperator}
+	 * labeled alternative in {@link MolangParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterAssignmentOperator(MolangParser.AssignmentOperatorContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code assignmentOperator}
+	 * labeled alternative in {@link MolangParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitAssignmentOperator(MolangParser.AssignmentOperatorContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code mulOrDiv}
 	 * labeled alternative in {@link MolangParser#expr}.
 	 * @param ctx the parse tree
@@ -229,4 +241,14 @@ public interface MolangListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitString(MolangParser.StringContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MolangParser#assignment}.
+	 * @param ctx the parse tree
+	 */
+	void enterAssignment(MolangParser.AssignmentContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MolangParser#assignment}.
+	 * @param ctx the parse tree
+	 */
+	void exitAssignment(MolangParser.AssignmentContext ctx);
 }

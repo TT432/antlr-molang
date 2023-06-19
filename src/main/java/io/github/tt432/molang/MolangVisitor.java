@@ -45,6 +45,13 @@ public interface MolangVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitComparisonOperator(MolangParser.ComparisonOperatorContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code assignmentOperator}
+	 * labeled alternative in {@link MolangParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAssignmentOperator(MolangParser.AssignmentOperatorContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code mulOrDiv}
 	 * labeled alternative in {@link MolangParser#expr}.
 	 * @param ctx the parse tree
@@ -141,4 +148,10 @@ public interface MolangVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitString(MolangParser.StringContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MolangParser#assignment}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAssignment(MolangParser.AssignmentContext ctx);
 }

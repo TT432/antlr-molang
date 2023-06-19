@@ -16,6 +16,7 @@ expr
     | expr OR_OPERATOR expr             # orOperator
     | expr BCO expr                     # binaryConditionalOperator
     | expr BCO expr TCO0 expr           # ternaryConditionalOperator
+    | variable assignment expr          # assignmentOperator
     | signedAtom                        # singleSignedAtom
     | RETURN expr                       # returnOperator
     ;
@@ -59,8 +60,16 @@ string
     : STRING
     ;
 
+assignment
+    : Assignment_Operator
+    ;
+
 fragment NUMBER
     : '0'..'9'+ ('.' '0'..'9'+ )?
+    ;
+
+Assignment_Operator
+    : '='
     ;
 
 COMPARISON_OPERATOR

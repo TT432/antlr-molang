@@ -77,6 +77,18 @@ public class MolangBaseListener implements MolangListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterAssignmentOperator(MolangParser.AssignmentOperatorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAssignmentOperator(MolangParser.AssignmentOperatorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterMulOrDiv(MolangParser.MulOrDivContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -252,6 +264,18 @@ public class MolangBaseListener implements MolangListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitString(MolangParser.StringContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAssignment(MolangParser.AssignmentContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAssignment(MolangParser.AssignmentContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
