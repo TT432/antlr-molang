@@ -143,7 +143,7 @@ E2
     ;
 
 ID
-    : [a-zA-Z_-]+
+    : [a-zA-Z_]+
     ;
 WS
     : [ \t\r\n]+ -> skip

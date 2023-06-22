@@ -1,16 +1,13 @@
-// Generated from Molang.g4 by ANTLR 4.9.1
+// Generated from .\Molang.g4 by ANTLR 4.9.1
  package io.github.tt432.c491;
-
-import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.atn.ATN;
-import org.antlr.v4.runtime.atn.ATNDeserializer;
-import org.antlr.v4.runtime.atn.ParserATNSimulator;
-import org.antlr.v4.runtime.atn.PredictionContextCache;
+import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
-import org.antlr.v4.runtime.tree.ParseTreeListener;
-import org.antlr.v4.runtime.tree.TerminalNode;
-
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.*;
+import org.antlr.v4.runtime.tree.*;
 import java.util.List;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class MolangParser extends Parser {
@@ -122,11 +119,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_exprSet; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterExprSet(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterExprSet(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitExprSet(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitExprSet(this);
 		}
 	}
 
@@ -143,7 +140,7 @@ public class MolangParser extends Parser {
 			setState(27);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,0,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -204,11 +201,11 @@ public class MolangParser extends Parser {
 		public TernaryConditionalOperatorContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterTernaryConditionalOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterTernaryConditionalOperator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitTernaryConditionalOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitTernaryConditionalOperator(this);
 		}
 	}
 	public static class OrOperatorContext extends ExprContext {
@@ -222,11 +219,11 @@ public class MolangParser extends Parser {
 		public OrOperatorContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterOrOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterOrOperator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitOrOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitOrOperator(this);
 		}
 	}
 	public static class SingleSignedAtomContext extends ExprContext {
@@ -236,11 +233,11 @@ public class MolangParser extends Parser {
 		public SingleSignedAtomContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterSingleSignedAtom(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterSingleSignedAtom(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitSingleSignedAtom(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitSingleSignedAtom(this);
 		}
 	}
 	public static class ComparisonOperatorContext extends ExprContext {
@@ -254,11 +251,11 @@ public class MolangParser extends Parser {
 		public ComparisonOperatorContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterComparisonOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterComparisonOperator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitComparisonOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitComparisonOperator(this);
 		}
 	}
 	public static class AssignmentOperatorContext extends ExprContext {
@@ -274,11 +271,11 @@ public class MolangParser extends Parser {
 		public AssignmentOperatorContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterAssignmentOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterAssignmentOperator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitAssignmentOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitAssignmentOperator(this);
 		}
 	}
 	public static class MulOrDivContext extends ExprContext {
@@ -294,11 +291,11 @@ public class MolangParser extends Parser {
 		public MulOrDivContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterMulOrDiv(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterMulOrDiv(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitMulOrDiv(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitMulOrDiv(this);
 		}
 	}
 	public static class AddOrSubContext extends ExprContext {
@@ -314,11 +311,11 @@ public class MolangParser extends Parser {
 		public AddOrSubContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterAddOrSub(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterAddOrSub(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitAddOrSub(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitAddOrSub(this);
 		}
 	}
 	public static class NeExprContext extends ExprContext {
@@ -329,11 +326,11 @@ public class MolangParser extends Parser {
 		public NeExprContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterNeExpr(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterNeExpr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitNeExpr(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitNeExpr(this);
 		}
 	}
 	public static class AndOperatorContext extends ExprContext {
@@ -347,11 +344,11 @@ public class MolangParser extends Parser {
 		public AndOperatorContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterAndOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterAndOperator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitAndOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitAndOperator(this);
 		}
 	}
 	public static class ReturnOperatorContext extends ExprContext {
@@ -362,11 +359,11 @@ public class MolangParser extends Parser {
 		public ReturnOperatorContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterReturnOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterReturnOperator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitReturnOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitReturnOperator(this);
 		}
 	}
 	public static class BinaryConditionalOperatorContext extends ExprContext {
@@ -380,11 +377,11 @@ public class MolangParser extends Parser {
 		public BinaryConditionalOperatorContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterBinaryConditionalOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterBinaryConditionalOperator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitBinaryConditionalOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitBinaryConditionalOperator(this);
 		}
 	}
 	public static class EqualsOperatorContext extends ExprContext {
@@ -398,11 +395,11 @@ public class MolangParser extends Parser {
 		public EqualsOperatorContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterEqualsOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterEqualsOperator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitEqualsOperator(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitEqualsOperator(this);
 		}
 	}
 
@@ -475,7 +472,7 @@ public class MolangParser extends Parser {
 			setState(74);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,4,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -634,11 +631,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_funcParam; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterFuncParam(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterFuncParam(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitFuncParam(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitFuncParam(this);
 		}
 	}
 
@@ -697,11 +694,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_signedAtom; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterSignedAtom(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterSignedAtom(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitSignedAtom(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitSignedAtom(this);
 		}
 	}
 
@@ -777,11 +774,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_atom; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterAtom(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterAtom(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitAtom(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitAtom(this);
 		}
 	}
 
@@ -852,11 +849,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_scientific; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterScientific(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterScientific(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitScientific(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitScientific(this);
 		}
 	}
 
@@ -903,11 +900,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_function; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterFunction(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterFunction(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitFunction(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitFunction(this);
 		}
 	}
 
@@ -974,11 +971,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_variable; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterVariable(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterVariable(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitVariable(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitVariable(this);
 		}
 	}
 
@@ -994,7 +991,7 @@ public class MolangParser extends Parser {
 			setState(119);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,10,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -1033,11 +1030,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_funcname; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterFuncname(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterFuncname(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitFuncname(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitFuncname(this);
 		}
 	}
 
@@ -1087,11 +1084,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_string; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterString(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterString(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitString(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitString(this);
 		}
 	}
 
@@ -1124,11 +1121,11 @@ public class MolangParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_assignment; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).enterAssignment(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).enterAssignment(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MolangListener) ((MolangListener)listener).exitAssignment(this);
+			if ( listener instanceof MolangListener ) ((MolangListener)listener).exitAssignment(this);
 		}
 	}
 

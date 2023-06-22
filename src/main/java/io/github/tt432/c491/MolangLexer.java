@@ -1,12 +1,13 @@
-// Generated from Molang.g4 by ANTLR 4.9.1
+// Generated from .\Molang.g4 by ANTLR 4.9.1
  package io.github.tt432.c491;
-
+import org.antlr.v4.runtime.Lexer;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.atn.ATN;
-import org.antlr.v4.runtime.atn.ATNDeserializer;
-import org.antlr.v4.runtime.atn.LexerATNSimulator;
-import org.antlr.v4.runtime.atn.PredictionContextCache;
+import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
+import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class MolangLexer extends Lexer {
@@ -131,8 +132,8 @@ public class MolangLexer extends Lexer {
 		"\3\27\6\27\u00a3\n\27\r\27\16\27\u00a4\3\27\3\27\3\30\3\30\3\31\3\31\3"+
 		"\32\3\32\3\33\3\33\3\34\3\34\3\35\3\35\4\u0080\u0089\2\36\3\3\5\2\7\4"+
 		"\t\5\13\6\r\7\17\b\21\t\23\n\25\13\27\f\31\r\33\16\35\17\37\20!\21#\22"+
-		"%\23\'\24)\25+\26-\27/\30\61\31\63\32\65\33\67\349\35\3\2\4\6\2//C\\a"+
-		"ac|\5\2\13\f\17\17\"\"\2\u00c2\2\3\3\2\2\2\2\7\3\2\2\2\2\t\3\2\2\2\2\13"+
+		"%\23\'\24)\25+\26-\27/\30\61\31\63\32\65\33\67\349\35\3\2\4\5\2C\\aac"+
+		"|\5\2\13\f\17\17\"\"\2\u00c2\2\3\3\2\2\2\2\7\3\2\2\2\2\t\3\2\2\2\2\13"+
 		"\3\2\2\2\2\r\3\2\2\2\2\17\3\2\2\2\2\21\3\2\2\2\2\23\3\2\2\2\2\25\3\2\2"+
 		"\2\2\27\3\2\2\2\2\31\3\2\2\2\2\33\3\2\2\2\2\35\3\2\2\2\2\37\3\2\2\2\2"+
 		"!\3\2\2\2\2#\3\2\2\2\2%\3\2\2\2\2\'\3\2\2\2\2)\3\2\2\2\2+\3\2\2\2\2-\3"+

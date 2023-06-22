@@ -1,4 +1,4 @@
-// Generated from Molang.g4 by ANTLR 4.9.1
+// Generated from .\Molang.g4 by ANTLR 4.9.1
  package io.github.tt432.c491;
 
 import org.antlr.v4.runtime.ParserRuleContext;
